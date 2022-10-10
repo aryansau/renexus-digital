@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+#xcontainer {
+  max-width: 1170px;
+  margin: auto;
+  margin-left: 100px;
+}
+
+.codepenBG {
+  height: 900px;
+  margin-top: 30px;
+}
+
+.heading h1:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: #BABABA;
+  margin-top: 4px;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+/* end global */
+
+/* start of our services section */
+
+#our-services {
+  background: #f6f6f6;
+  min-height: 530px;
+  padding-top: 91px;
+}
+
+/* OUR SEERVICES LEFT SIDE */
+
+#our-services .desc {
+  width: 33%;
+  float: left;
+}
+
+#our-services .desc .heading h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+  color: #202020;
+}
+
+#our-services .desc .text {
+  color: #BABABA;
+}
+
+#our-services .desc .text p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* OUR SERVICES RIGHT SIDE */
+
+#our-services .services {
+  width: 67%;
+  float: left;
+  height: 500px;
+  top: 7px;
+  position: relative;
+}
+
+#our-services .services .serviceinfo {
+  height: 400px;
+}
+
+#our-services .services .row {
+  float: left;
+  transition: transform 0.3s 0.3s ease, top 0.4s ease;
+}
+
+#our-services .services .row1 {
+  position: relative;
+  top: 0px;
+  transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+  left: 0px;
+}
+
+#our-services .services .row2 {
+  position: relative;
+  top: 0px;
+  transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+  margin-left: 105px;
+  left: 0px;
+}
+
+#column-1 {
+  position: relative;
+  top: 11px;
+  left: 0px;
+}
+
+#column-2 {
+  position: relative;
+  top: 10px;
+  left: -5px;
+}
+
+#our-services .services .row1expand {
+  margin-right: 0px;
+  transform: rotate(0deg);
+  position: relative;
+  top: -93px;
+  transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+  left: 300px;
+  z-index: 2;
+}
+
+#our-services .services .row2expand {
+  float: left;
+  margin-right: 0px;
+  margin-top: 160px !important;
+  transform: rotate(0deg);
+  position: relative;
+  top: 110px;
+  transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+  left: 195px;
+  z-index: 2;
+}
+
+#our-services .services .row .service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 120px;
+  height: 120px;
+  /* background:white !important; */
+  border: solid !important;
+  transition: all 0.3s ease;
+  margin-bottom: 7px;
+  margin-left: 85px;
+  transform: rotate(45deg);
+  transition: margin-left 0.3s 0.4s;
+}
+
+#our-services .services .row .serviceexpand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 120px;
+  height: 120px;
+  background: #FFFFFF;
+  transition: all 0.3s ease;
+  margin-bottom: 7px;
+  margin-left: 0px;
+  transform: rotate(0deg);
+  transition: margin-left 0.3s 0.4s;
+}
+
+#our-services .services .row .selectedservice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: #5eed76;
+  transition: all 0.3s ease;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+#our-services .services .row .service:hover {
+  background: #28282e;
+  color: #fff;
+}
+
+#our-services .services .row .service:hover .service-icon {
+  color: #fff;
+}
+
+#servicechoicetext {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  left: 390px;
+  opacity: .4;
+  color: white;
+}
+
+#our-services .services .row .service .service-desc {
+  transform: rotate(-45deg);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+#our-services .services .row .service .service-desc p {
+  font-size: 10px;
+}
+
+#our-services .services .row .service .service-desc .service-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #f57469;
+}
+
+/* end of our services section */
+
+
+
+#servicesdetails {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  width: 600px;
+}
+
+#servicesdetails .invisible {
+  position: relative;
+  top: 60px;
+  left: 70px;
+  opacity: .0;
+  transition: all 0.5s ease;
+  color: white;
+}
+
+#servicesdetails .visible {
+  color: white;
+  opacity: .9;
+  position: relative;
+  top: 85px;
+  transition: all 0.5s ease;
+}
+
+#microassessment {
+  display: none;
+  height: 0px;
+  overflow: visible;
+}
+
+#documentreview {
+  display: none;
+  height: 0px;
+  overflow: visible;
+}
+
+#macroassessment {
+  display: none;
+  height: 0px;
+  overflow: visible;
+}
+
+#deliverableservices {
+  display: none;
+  height: 0px;
+  overflow: visible;
+}
+
+#projectexecution {
+  display: none;
+  height: 0px;
+  overflow: visible;
+}
+
+#dpooutsourcing {
+  display: none;
+  height: 0px;
+  overflow: visible;
+}
+
+
+
+.new-section {
+	font-family: "Poppins", sans-serif;
+	background-color: #e6edf7;
+	color: #202020;
+	padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.new-section .header-section {
+	margin-bottom: 34px;
+}
+
+.new-section .header-section .title {
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
+}
+
+.new-section .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #ef7b14;
+    border-radius: 3px;
+}
+
+.new-section .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #504f93;
+    border-radius: 3px;
+}
+
+.new-section .header-section .description {
+	font-size: 14px;
+    color: #282828;
+}
+
+.new-section .single-service {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+.new-section .single-service .content {
+	position: relative;
+	z-index: 20;
+}
+
+.new-section .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: #ef7b14;
+    border: 6px solid #504f93;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 10;
+    transition: all .6s;
+}
+
+.new-section .single-service:hover .circle-before {
+	width: 100%;
+	height: 100%;
+	transform: none;
+	border: 0;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.new-section .single-service .icon {
+	display: inline-block;
+	margin-bottom: 26px;
+    width: 70px;
+    height: 70px;
+    background-color: #ef7b14;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.new-section .single-service:hover .icon {
+	background-color: #fff;
+	color: #ef7b14;
+}
+
+.new-section .single-service .title {
+    margin-bottom: 18px;
+	font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+
+.new-section .single-service:hover .title {
+	color: #fff;
+}
+
+.new-section .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.new-section .single-service:hover .description {
+	color: #fff;
+}
+
+.new-section .single-service a {
+	position: relative;
+	font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.new-section .single-service:hover a {
+	color: #fff;
+}
+
+.new-section .single-service a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #ef7b14;
+	transition: background-color .3s;
+}
+
+.new-section .single-service:hover a:after {
+	background-color: #fff;
+}
+
+@media(min-width:600px){
+  #techname{
+    font-size:70px;
+  }
+  #techcont{
+    margin-top:-700px
+  }
+}
+
+@media(max-width:768px){
+  #techname{
+    font-size:52px !important;
+  }
+  #techcont{
+    margin-top:-200px !important;
+  }
+}
+
+.givemargin{
+  margin-top: -230px !important;
+  padding-top: 100px;
+}
+
+@media(max-width:600px){
+  #S3,#S6,#S10,#S11,#S12{
+    margin-top: 23px !important;
+  }
+
+}

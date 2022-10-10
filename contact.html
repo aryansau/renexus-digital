@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="./assests/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="./assests/css/contact.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+  <style>
+    section {
+      padding: 60px 0;
+      min-height: 100vh;
+    }
+
+    .contact-info {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-info-icon {
+      margin-bottom: 15px;
+    }
+
+    .contact-info-item {
+      background: #202020;
+      padding: 30px 0px;
+    }
+
+    .contact-page-sec .contact-page-form h2 {
+      color: #071c34;
+      text-transform: capitalize;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .contact-info-icon i {
+      font-size: 48px;
+      color: #fda40b;
+    }
+
+    .contact-info-text p {
+      margin-bottom: 0px;
+    }
+
+    .contact-info-text h2 {
+      color: #fff;
+      font-size: 22px;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .contact-info-text span {
+      color: #999999;
+      font-size: 16px;
+      font-weight: ;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .contact-page-map {
+      margin-top: 36px;
+    }
+  </style>
+
+</head>
+
+<body style="background:white">
+
+  <div id="loading" style="background: url('/media/preloader.gif') no-repeat center center ;       opacity:0.85;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform: scale(2);
+      z-index: 9999999;"></div>
+
+
+  <div class="wrapper">
+    <header>
+      <nav id="navbar" style="z-index: 99999999;background-color:#202020 !important">
+        <div class="menu-icon">
+          <i style="color: #202020" class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          <a href="https://niksm7.github.io/renexus-digital/" style="font-size:20px;font-weight:600;color:#202020">Logo</a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a style="color:#202020; " href="https://niksm7.github.io/renexus-digital/">Home</a></li>
+            <li><a style="color:#202020;" href="about">About Us</a></li>
+            <li><a style="color:#202020;" href="contact">Contact</a></li>
+            <li><button onclick="requestdemo()" class="btn btn-outline-success" style="color: #202020;border-radius: 10%"
+                href="#">Let's Chat</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Nav Ends -->
+    </header>
+
+  </div>
+
+
+  <!-- Request Demo Form Starts -->
+
+  <div class='form-overlay'></div>
+  <div class='icon' id='form-container' style="z-index: 99999999999 !important;position: fixed">
+    <span class='icon fa fa-times' id='form-close'></span>
+    <div id='form-content'>
+      <div id='form-head'>
+        <h1 class='pre'>Let's Chat</h1>
+        <p class='pre'>Good choice...</p>
+        <h1 class='post'>Thanks!</h1>
+        <p class='post'>We'll be in touch ASAP</p>
+      </div>
+      <form id="lets_chat">
+        <input id="iname" class='input name' name='user_name' placeholder='Your name please' type='text'>
+        <input id="iemail" class='input email' name='user_email' placeholder='A contact email' type='text'>
+        <input id="iphone" class='input name' name='user_phone' placeholder='Phone Number' type='text'>
+        <input id="icity" class='input name' name='user_city' placeholder='Contact City' type='text'>
+        <textarea id="imsg" class='input message' name="user_msg" placeholder='Additional Information?'></textarea>
+        <input class='input submit' onclick="submitreq()" type='submit' value='Send Message'>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- <section class="contact-page-sec"> -->
+  <div class="container" style="margin-top: 140px;">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i style="color: #ef7b14;" class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-info-text">
+              <h2>address</h2>
+              <span>Company landmark</span>
+              <span>city,state</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i style="color: #ef7b14;" class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info-text">
+              <h2>E-mail</h2>
+              <span>nikhilsmankani@company.com</span>
+              <span>hr@company.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i style="color: #ef7b14;" class="fas fa-address-book"></i>
+            </div>
+            <div class="contact-info-text">
+              <h2>Other contact</h2>
+              <span>Skype <a href="skype:live:5ce4c39a0e968e84?chat" style="color: white;font-size:15px">Chat
+                  here</a></span>
+              <span>Phone Number - +91-7276775259</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </section> -->
+
+
+
+
+
+  <div class="container-fluid mt-7 mb-25">
+    <div class="row">
+      <div class="col-12">
+        <section class="tm-contact-form-box mx-auto mb-7">
+          <h3 class="tm-title-black mb-4 text-center">Contact Information</h3>
+          <hr class="mb-8 tm-hr tm-hr-s mx-auto">
+          <!-- Contact form starts -->
+          <form id="contact-form" action="{% url 'contact' %}" method="POST" class="tm-contact-form">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control rounded-0" placeholder="Name" requi#ef7b14 />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control rounded-0" placeholder="Email" requi#ef7b14 />
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control rounded-0" placeholder="Subject" requi#ef7b14 />
+            </div>
+            <div class="form-group">
+              <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message"
+                requi#ef7b14></textarea>
+            </div>
+
+            <div class="form-group mb-0">
+              <button type="submit" style="background-color: #ef7b14;" class="btn btn-danger rounded-0 d-block mx-auto">Submit</button>
+            </div>
+          </form>
+          <!-- Contact form ends -->
+        </section>
+        <section class="tm-address-box mx-auto">
+          <h3 class="tm-title-black mb-4 text-center">Our Address</h3>
+          <hr class="mb-5 tm-hr tm-hr-s mx-auto">
+          <h3 style="color: #202020;" class="mb-8 mx-auto text-center tm-address-text">
+            Mumbai, Maharashtra
+          </h3>
+          <!-- Map div starts -->
+          <div class="mapouter mb-60">
+            <div class="gmap_canvas">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.64332560156!2d72.74109896369522!3d19.08252232197252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1618423604439!5m2!1sen!2sin"
+                width="100%" height="520" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"></iframe>
+            </div>
+          </div>
+          <!-- Map div ends -->
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Float button -->
+
+  <a href="#" class="float" id="menu-share">
+    <i class="fa fa-share my-float"></i>
+  </a>
+  <ul id="contactul">
+    <li><a href="https://www.linkedin.com/in/nikhilmankani/" id="linkedinicon" target="_blank">
+        <i class="fab fa-linkedin my-float"></i>
+      </a></li>
+    <li><a href="tel:+91-7276775259">
+        <i class="fa fa-phone my-float"></i>
+      </a></li>
+    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nikhilsmankani@gmail.com">
+        <i class="fa fa-envelope my-float"></i>
+      </a></li>
+  </ul>
+
+  <!-- Footer -->
+
+  <div w3-include-html="footer.html"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+</body>
+
+
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+</script>
+
+<script>
+  function hideLoader() {
+    $('#loading').hide();
+  }
+
+  $(window).ready(hideLoader);
+
+
+  $(document).ready(function () {
+    $(".menu-icon").on("click", function () {
+      $("nav ul").toggleClass("showing");
+    });
+  });
+
+  // Scrolling Effect
+
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
+      $('nav').addClass('black');
+    }
+
+    else {
+      $('nav').removeClass('black');
+    }
+  })
+
+
+  var formContainer = $('#form-container');
+
+  bindFormClick();
+  //Opening the form
+  function bindFormClick() {
+    $(formContainer).on('click', function (e) {
+      e.preventDefault();
+      toggleForm();
+      //Ensure container doesn't togleForm when open
+      $(this).off();
+    });
+  }
+
+  //Closing the form
+  $('#form-close, .form-overlay').click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    toggleForm();
+    bindFormClick();
+  });
+
+  function toggleForm() {
+    $(formContainer).toggleClass('expand');
+    $(formContainer).children().toggleClass('expand');
+    $('body').toggleClass('show-form-overlay');
+    $('.form-submitted').removeClass('form-submitted');
+  }
+
+  //Form validation
+  $('#lets_chat').submit(function () {
+    var form = $(this);
+    form.find('.form-error').removeClass('form-error');
+    var formError = false;
+
+    form.find('.input').each(function () {
+      if ($(this).val() == '') {
+        $(this).addClass('form-error');
+        $(this).select();
+        formError = true;
+        return false;
+      }
+      else if ($(this).hasClass('email') && !isValidEmail($(this).val())) {
+        $(this).addClass('form-error');
+        $(this).select();
+        formError = true;
+        return false;
+      }
+    });
+
+    if (!formError) {
+      $('body').addClass('form-submitted');
+      $('#form-head').addClass('form-submitted');
+      setTimeout(function () {
+        $(form).trigger("reset");
+      }, 1000);
+    }
+    return false;
+  });
+
+  function isValidEmail(email) {
+    var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+    return pattern.test(email);
+  };
+
+
+
+  function requestdemo() {
+    $("#form-container").trigger('click');
+  }
+
+  function submitreq() {
+    if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
+      $.ajax({
+        url: "{% url 'reqdemo' %}",
+        data: {
+          'name': $('#iname').val(),
+          'email': $('#iemail').val(),
+          'phone': $('#iphone').val(),
+          'city': $('#icity').val(),
+          'msg': $('#imsg').val()
+        },
+        encode: true
+      });
+    }
+  }
+
+</script>
+
+</html>

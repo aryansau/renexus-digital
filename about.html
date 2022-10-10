@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+    <link href="./assests/css/about.css" rel="stylesheet" />
+
+<body style="background:white">
+
+    <div id="loading" style="background: url('./assests/images/preloader.gif') no-repeat center center ;       opacity:0.85;
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     transform: scale(2);
+     z-index: 9999999;"></div>
+
+
+    <div class="wrapper">
+        <header>
+            <nav id="navbar" style="z-index: 99999999;background-color:#202020 !important">
+                <div class="menu-icon">
+                    <i style="color: #202020" class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <a href="https://niksm7.github.io/renexus-digital/"
+                        style="font-size:20px;font-weight:600;color:#202020">Logo</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a style="color:#202020;" href="https://niksm7.github.io/renexus-digital/">Home</a></li>
+                        <li><a style="color:#202020;" href="about">About Us</a></li>
+                        <li><a style="color:#202020;" href="contact">Contact</a></li>
+                        <li><button onclick="requestdemo()" class="btn btn-outline-success"
+                                style="color: #202020;border-radius: 10%" href="#">Let's Chat</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Nav Ends -->
+        </header>
+
+    </div>
+
+
+    <!-- Request Demo Form Starts -->
+
+    <div class='form-overlay'></div>
+    <div class='icon' id='form-container' style="z-index: 99999999999 !important;position: fixed">
+        <span class='icon fa fa-times' id='form-close'></span>
+        <div id='form-content'>
+            <div id='form-head'>
+                <h1 class='pre'>Let's Chat</h1>
+                <p class='pre'>Good choice...</p>
+                <h1 class='post'>Thanks!</h1>
+                <p class='post'>We'll be in touch ASAP</p>
+            </div>
+            <form id="lets_chat">
+                <input id="iname" class='input name' name='user_name' placeholder='Your name please' type='text'>
+                <input id="iemail" class='input email' name='user_email' placeholder='A contact email' type='text'>
+                <input id="iphone" class='input name' name='user_phone' placeholder='Phone Number' type='text'>
+                <input id="icity" class='input name' name='user_city' placeholder='Contact City' type='text'>
+                <textarea id="imsg" class='input message' name="user_msg"
+                    placeholder='Additional Information?'></textarea>
+                <input class='input submit' onclick="submitreq()" type='submit' value='Send Message'>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div id="scrollToKnow"
+        style="color: #fff; height: 500px;background-image: url('./assests/images/Our_Vision_Cover.png');background-repeat: no-repeat;background-size: 100%;width: 100%; margin-bottom: 26px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.26);height:750px;background-attachment: fixed;">
+        <!-- <h1 style="padding-top: 240px;font-size:100px">Scroll<span id="bounce">&darr;</span></h1>
+    <p style="color: white;">TO KNOW OUR JOURNEY</p> -->
+    </div>
+
+    <!-- Timeline for desktop starts -->
+    <h3 class="tm-title-gray mb-3" style="color:#202020 !important;text-align:center">WHY <span
+            style="color: #ef7b14 !important;">US?</span> </h3>
+    <div class="full" id="timeline">
+
+        <br>
+        <br>
+        <br>
+        <div class="timeline" style="margin-bottom: -300px;">
+
+            <div class="fakePuce puceImg" id="puceProfile" data-anchor-target="#puceTwo"
+                style="border-radius: 0em !important;background: url(./assests/images/About-criss_images/1st-point.jpg) !important;background-size:cover !important;"
+                data--130-bottom="width: 100px; height: 150px; top: 0px; left: -80px;"
+                data--140-bottom="top: 0px; left: -80px; width: 200px; height: 200px;">
+
+                <!-- Here data--130 is for when you haven't scrolled to that img and 140 is for after that img has been scrolled -->
+
+            </div>
+
+            <div class="rotateOne" style="top: 165px;" class="full">
+                <div id="bar" data-anchor-target="#puceTwo" data--140-bottom="width: 0%;"
+                    data--200-bottom="width: 100%;">
+                </div>
+            </div>
+
+            <img class="puce puceLeft puceOne" data--180-bottom="opacity: 1;" data--200-bottom="opacity: 0;"
+                id="puceOne"><img class="puce puceLeft puceOne" data--180-bottom="opacity: 0;"
+                data--200-bottom="opacity: 1;">
+            <p style="opacity: 1;color:#202020;width: 557px;
+        margin-left: 150px;
+        margin-top: -15px;" class="descOne" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We support you in establishing and levelling
+                up your brand recognition.
+            </p>
+            <div class="fakePuce puceImg" id="pucePt2" data-anchor-target="#puceTwo"
+                style="border-radius: 0em !important;"
+                data--180-bottom="width: 100px; height: 150px;top: 250px; right: -70px;"
+                data--200-bottom="width: 150px; height: 150px; top: 250px; right: -70px;">
+            </div>
+            <div class="rotateTwo" style="top: 408px;" class="full">
+                <div id="bar" data-anchor-target="#puceThree" data--140-bottom="width: 0%;"
+                    data--200-bottom="width: 100%;">
+                </div>
+            </div>
+            <img class="puce puceRight puceTwo" data--180-bottom="opacity: 1;" data--200-bottom="opacity: 0;"
+                id="puceTwo"><img style="opacity: 1;" class="puce puceRight puceTwo" data--180-bottom="opacity: 0;"
+                data--200-bottom="opacity: 1;">
+            <p style="opacity: 1;color:#202020;margin-left:-82px !important;" class="descTwo"
+                data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We help you connect with customers
+            </p>
+            <div class="fakePuce puceImg" id="puceHtml" data-anchor-target="#puceThree"
+                style="border-radius: 0em !important;"
+                data--180-bottom="width: 100px; height: 150px; top: 500px; left: -80px;" data--200-bottom="
+      width: 200px; height: 200px; top: 480px; left: -80px;">
+
+            </div>
+            <div class="rotateOne" style="top: 665px;" class="full">
+                <div id="bar" data-anchor-target="#puceFour" data--140-bottom="width: 0%;"
+                    data--200-bottom="width: 100%;">
+                </div>
+            </div>
+            <img class="puce puceLeft puceThree" data--180-bottom="opacity: 1;" data--200-bottom="opacity: 0;"
+                id="puceThree"><img style="opacity: 1;" class="puce puceLeft puceThree" data--180-bottom="opacity: 0;"
+                data--200-bottom="opacity: 1;">
+            <p style="opacity: 1;width: 330px;
+        margin-left: 160px;
+        margin-top: -39px;" class="descThree" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We offer top notch services at affordable
+                prices.
+            </p>
+            <div class="fakePuce puceImg" id="puceCss" data-anchor-target="#puceFour"
+                style="border-radius: 0em !important;"
+                data--180-bottom="width: 100px; height: 150px; top: 750px; right: -47px;"
+                data--200-bottom="width: 150px; height: 150px; top: 750px; right: -47px;">
+            </div>
+            <div class="rotateTwo" style="top: 905px;" class="full">
+                <div id="bar" data-anchor-target="#puceFive" data--140-bottom="width: 0%;"
+                    data--200-bottom="width: 100%;">
+                </div>
+            </div>
+            <img class="puce puceRight puceFour" data--180-bottom="opacity: 1;" data--200-bottom="opacity: 0;"
+                id="puceFour"><img style="opacity: 1;" class="puce puceRight puceFour" data--180-bottom="opacity: 0;"
+                data--200-bottom="opacity: 1;">
+            <p style="opacity: 1;width: 367px;
+        margin-left: -123px;
+        margin-top: -32px;" class="descFour" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We support you in increasing website traffic.
+            </p>
+            <div class="fakePuce puceImg" id="puce4t5" data-anchor-target="#puceFive"
+                style="border-radius: 0em !important;"
+                data--180-bottom="width: 100px; height: 150px; top: 1000px; left: -80px;"
+                data--200-bottom="width: 200px; height: 200px; top: 1000px; left: -80px;">
+            </div>
+            <div class="rotateOne" style="top: 1155px;" class="full">
+                <div id="bar" data-anchor-target="#puceSix" data--140-bottom="width: 0%;"
+                    data--200-bottom="width: 100%;">
+                </div>
+            </div>
+            <img class="puce puceLeft puceFive" data--180-bottom="opacity: 1;" data--200-bottom="opacity: 0;"
+                id="puceFive"><img style="opacity: 1;" class="puce puceLeft puceFour" data--180-bottom="opacity: 0;"
+                data--200-bottom="opacity: 1;">
+            <p style="opacity: 1;margin-left: 253px; margin-top:-30px;
+        width: 500px;" class="descFive" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We offer SEO help
+            </p>
+            <div class="fakePuce puceImg" id="pucePhp" data-anchor-target="#puceSix"
+                style="border-radius: 0em !important;"
+                data--180-bottom="width: 100px; height: 150px; top: 1250px; right: -47px;"
+                data--200-bottom="width: 150px; height: 150px; top: 1250px; right: -47px;">
+            </div>
+            <div class="rotateTwo" style="top: 1400px;" class="full">
+                <div id="bar" style="width: 0% !important;" data-anchor-target="#puceSeven"
+                    data--140-bottom="width: 0%;" data--200-bottom="width: 100%;">
+                </div>
+            </div>
+            <img class="puce puceRight puceSix" data--180-bottom="opacity: 1;" data--200-bottom="opacity: 0;"
+                id="puceSix"><img style="opacity: 1;" class="puce puceRight puceSix" data--180-bottom="opacity: 0;"
+                data--200-bottom="opacity: 1;">
+            <p style="opacity: 1;width: 450px;
+        margin-left: -24px;
+        margin-top: -4px;" class="descSix" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We assist you with lead generation.
+            </p>
+            <div class="fakePuce puceImg" id="puceJs" data-anchor-target="#puceSeven"
+                style="border-radius: 0em !important;"
+                data--180-bottom="width: 100px; height: 150px; left: -80px; top: 1500px;"
+                data--200-bottom="width: 200px; height: 200px; left: -80px; top: 1500px;">
+            </div>
+            <div class="rotateOne" style="top: 1650px;" class="full">
+                <div id="bar" style="width: 0% !important;" data-anchor-target="#puceHeight"
+                    data--140-bottom="width: 0%;" data--200-bottom="width: 100%;">
+                </div>
+            </div>
+            <img style="opacity: 1;" class="puce puceSeven puceLeft" data--180-bottom="opacity: 1;"
+                data--200-bottom="opacity: 0;" id="puceSeven">
+            <img class="puce puceSeven puceLeft" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+            <p style="width: 320px;
+        margin-left: 120px;
+        margin-top: -5px;color:#202020" class="descSeven" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+                We help you with targeted campaigns.
+            </p>
+            <div class="fakePuce puceImg" id="puceEnvr" data-anchor-target="#puceHeight"
+                data--180-bottom="width: 100px; height: 150px; top: 1750px; right: -47px;"
+                data--200-bottom="width: 250px; height: 150px; top: 1750px; right: -47px;">
+            </div>
+
+            <img style="opacity: 1;" class="puce puceHeight puceRight" data--180-bottom="opacity: 1;"
+                data--200-bottom="opacity: 0;" id="puceHeight">
+            <img class="puce puceHeight puceRight" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+
+
+            <img style="opacity: 1;" class="puce puceLeft puceNine" data--180-bottom="opacity: 1;"
+                data--200-bottom="opacity: 0;" id="puceNine">
+            <img class="puce puceLeft puceNine" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+
+            <img style="opacity: 1;" class="puce puceCenter puceTen" data--180-bottom="opacity: 1;"
+                data--200-bottom="opacity: 0;" id="puceTen">
+            <img class="puce puceCenter puceTen" data--180-bottom="opacity: 0;" data--200-bottom="opacity: 1;">
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Template of timeline for mobile is included here -->
+    <div w3-include-html="newtimeline.html"></div>
+
+
+
+    <!-- Team Info starts -->
+
+    <div class="container-fluid mt-7">
+        <div class="row mb-4">
+            <section class="col-lg-4 mb-8 tm-px-3">
+                <div class="tm-box-bordered p-5">
+                    <h3 class="tm-title-gray mb-3" style="color:#202020 !important">Our <span
+                            style="color: #ef7b14 !important;">Vision</span> </h3>
+                    <hr class="mb-4 tm-hr tm-hr-s" style="color:#ef7b14 !important;">
+                    <p style="color:#202020 !important" class="mb-4">Our mission is to offer measurable outcomes to our
+                        clients while giving them the wow factor through our services. Our vision is to give our clients
+                        the maximum satisfaction.</p>
+                </div>
+            </section>
+            <div class="col-lg-4 col-md-6 mb-8 tm-px-3">
+                <figure class="tm-about-person-layout">
+                    <img src="./assests/images/integrity_image.svg"
+                        style="max-height: 250px;min-height: 250px; width:100%" alt="Image" class="img-fluid mb-5">
+                    <figcaption style="text-align: center;">
+                        <h3 class="mb-4">
+                            <span class="text-primary" style="color:#ef7b14 !important;">Integrity</span>&nbsp;
+                        </h3>
+                        <p style="color:#202020 !important">Acting with strong ethics is the top-most priority of our
+                            company.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-8 tm-px-3">
+                <figure class="tm-about-person-layout">
+                    <img src="./assests/images/team_work_img.svg" style="max-height: 250px;min-height: 250px;width:100%"
+                        alt="Image" class="img-fluid mb-5">
+                    <figcaption style="text-align: center;">
+                        <h3 class="mb-4">
+                            <span class="text-primary" style="color:#ef7b14 !important;">Teamwork</span>&nbsp;
+                        </h3>
+                        <p style="color:#202020 !important">The best attribute of our business is teamwork. "Talent wins
+                            games, but teamwork and intelligence win championships," is a phrase that is accurate.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-8 tm-px-3">
+                <figure class="tm-about-person-layout">
+                    <img src="./assests/images/problem_solving_img.svg"
+                        style="max-height: 250px;min-height: 250px;width:100%" alt="Image" class="img-fluid mb-5">
+                    <figcaption style="text-align: center;">
+                        <h3 class="mb-4">
+                            <span class="text-primary" style="color:#ef7b14 !important;">Problem Solving</span>&nbsp;
+                        </h3>
+                        <p style="color:#202020 !important">Our team excels at resolving the digital problems of the firm
+                            via attentive listening and careful analysis. The answer to all of your issues can be found
+                            at Renexus!</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-8 tm-px-3">
+                <figure class="tm-about-person-layout">
+                    <img src="./assests/images/honesty_img.svg" style="max-height: 250px;min-height: 250px;width:100%"
+                        alt="Image" class="img-fluid mb-5">
+                    <figcaption style="text-align: center;">
+                        <h3 class="mb-4">
+                            <span class="text-primary" style="color:#ef7b14 !important;">Honesty</span>&nbsp;
+                        </h3>
+                        <p style="color:#202020 !important">Honesty is not just the best policy but also the core value of
+                            our company.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-8 tm-px-3">
+                <figure class="tm-about-person-layout">
+                    <img src="./assests/images/quality_img.svg" style="max-height: 250px;min-height: 250px;width:100%"
+                        alt="Image" class="img-fluid mb-5">
+                    <figcaption style="text-align: center;">
+                        <h3 class="mb-4">
+                            <span class="text-primary" style="color:#ef7b14 !important;">Quality</span>&nbsp;
+                        </h3>
+                        <p style="color:#202020 !important">Quality is always our first priority at Renexus Digital.
+                            Quality is our pride and we always march towards it.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- {% for emp in employees %} -->
+            <!-- <div class="col-lg-4 col-md-6 mb-8 tm-px-3">
+                <figure class="effect-milo tm-about-person tm-about-person-layout">
+                    <img src="/images/Founder.jpg" alt="Image" class="img-fluid">
+                    <figcaption>
+                        <h2><span>{{emp.name}}</span>&nbsp;&nbsp;({{emp.position}})</h2>
+                        <p class="mb-4">{{emp.work_desc}}</p>
+                        <p>
+                            <a href="{{emp.linkedin}}" target="_blank" class="tm-social-link">
+                                <i class="fab fa-linkedin fa-15x tm-social-icon tm-social-icon-2"></i>
+                            </a>
+                            <a href="{{emp.github}}" target="_blank" class="tm-social-link">
+                                <i class="fab fa-github fa-15x tm-social-icon tm-social-icon-2"></i>
+                            </a>
+                            <a href="{{emp.website}}" target="_blank" class="tm-social-link">
+                                <i class="fa fa-globe fa-15x tm-social-icon tm-social-icon-2"></i>
+                            </a>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div> -->
+            <!-- {% endfor %} -->
+
+        </div>
+    </div>
+
+    <!-- Team info ends -->
+
+    <!-- Contact Float button -->
+
+    <a href="#" class="float" id="menu-share">
+        <i class="fa fa-share my-float"></i>
+    </a>
+    <ul id="contactul">
+        <li><a href="https://www.linkedin.com/in/nikhilmankani/" id="linkedinicon" target="_blank">
+                <i class="fab fa-linkedin my-float"></i>
+            </a></li>
+        <li><a href="tel:+91-7276775259">
+                <i class="fa fa-phone my-float"></i>
+            </a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nikhilsmankani@gmail.com">
+                <i class="fa fa-envelope my-float"></i>
+            </a></li>
+    </ul>
+
+    <!-- Footer -->
+
+    <div w3-include-html="footer.html"></div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+    <script src="https://renseign.com/js/mootools.js"></script>
+    <script>
+        $(function () {
+            $().timelinr({
+                orientation: 'vertical',
+                issuesSpeed: 300,
+                datesSpeed: 100,
+                arrowKeys: 'true',
+                startAt: 1
+            })
+        });
+    </script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain attribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+
+        function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        resolve(document.querySelector(selector));
+                        observer.disconnect();
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+        }
+
+    </script>
+
+    <script>
+        includeHTML()
+        let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+        //If user is viewing from mobile then we hide the first timeline and show a different one.
+
+        if (isMobile) {
+            $('#timeline').attr('hidden', true);
+            $('#scrollToKnow').attr('hidden', true);
+            waitForElm('#timeline1').then((elm) => {
+                $('#timeline1').attr('hidden', false);
+            });
+        }
+        else {
+
+            //If it is not a mobile only then we get the script and run the script associated with the desktop timeline to avoid causing unnecessary errors.
+
+            $.getScript("https://renseign.com/js/scroll.js", function () {
+                var s = skrollr.init({
+                    smoothScrolling: true,
+                    mobileDeceleration: 0.004
+                });
+
+                delayAnimation();
+
+                function delayAnimation() {
+                    var animatedEl = document.getElementById('bounce');
+                    animatedEl.className = '';
+                    setTimeout(function () {
+                        animatedEl.className = 'bounce'
+                        setTimeout(delayAnimation, 1000)
+                    }, 1500)
+                }
+            })
+        }
+
+        /*$(document).ready(function() {
+      setTimeout(function() {
+        $("#form-container").trigger('click');
+      }, 7000); // for 5 second delay
+    }); */
+    </script>
+
+    <script>
+        function hideLoader() {
+            $('#loading').hide();
+        }
+
+        $(window).ready(hideLoader);
+
+
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+
+
+        var formContainer = $('#form-container');
+
+        bindFormClick();
+        //Opening the form
+        function bindFormClick() {
+            $(formContainer).on('click', function (e) {
+                e.preventDefault();
+                toggleForm();
+                //Ensure container doesn't togleForm when open
+                $(this).off();
+            });
+        }
+
+        //Closing the form
+        $('#form-close, .form-overlay').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            toggleForm();
+            bindFormClick();
+        });
+
+        function toggleForm() {
+            $(formContainer).toggleClass('expand');
+            $(formContainer).children().toggleClass('expand');
+            $('body').toggleClass('show-form-overlay');
+            $('.form-submitted').removeClass('form-submitted');
+        }
+
+        //Form validation
+        $('#lets_chat').submit(function () {
+            var form = $(this);
+            form.find('.form-error').removeClass('form-error');
+            var formError = false;
+
+            form.find('.input').each(function () {
+                if ($(this).val() == '') {
+                    $(this).addClass('form-error');
+                    $(this).select();
+                    formError = true;
+                    return false;
+                }
+                else if ($(this).hasClass('email') && !isValidEmail($(this).val())) {
+                    $(this).addClass('form-error');
+                    $(this).select();
+                    formError = true;
+                    return false;
+                }
+            });
+
+            if (!formError) {
+                $('body').addClass('form-submitted');
+                $('#form-head').addClass('form-submitted');
+                setTimeout(function () {
+                    $(form).trigger("reset");
+                }, 1000);
+            }
+            return false;
+        });
+
+        function isValidEmail(email) {
+            var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+            return pattern.test(email);
+        };
+
+
+
+        function requestdemo() {
+            $("#form-container").trigger('click');
+        }
+
+        function submitreq() {
+            if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
+                $.ajax({
+                    url: "{% url 'reqdemo' %}",
+                    data: {
+                        'name': $('#iname').val(),
+                        'email': $('#iemail').val(),
+                        'phone': $('#iphone').val(),
+                        'city': $('#icity').val(),
+                        'msg': $('#imsg').val()
+                    },
+                    encode: true
+                });
+            }
+        }
+
+    </script>

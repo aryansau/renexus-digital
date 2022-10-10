@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+
+
+  <link rel="stylesheet" href="./assests/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./assests/css/index_style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="./assests/css/service.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body style="background:white">
+
+  <div id="loading" style="background: url('./assests/images/preloader.gif') no-repeat center center ;       opacity:0.85;
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   transform: scale(2);
+   z-index: 9999999;"></div>
+
+
+  <div class="wrapper">
+    <header>
+      <nav id="navbar" style="z-index: 99999999;background-color:#ffffff !important">
+        <div class="menu-icon">
+          <i style="color: #202020" class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          <a href="" style="font-size:20px;font-weight:600;color:#202020">Logo</a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a style="color:#202020; " href="">Home</a></li>
+            <li><a style="color:#202020;" href="about">About Us</a></li>
+            <li><a style="color:#202020;" href="contact">Contact</a></li>
+            <li><button onclick="requestdemo()" class="btn btn-outline-success" style="color: #202020;border-radius: 10%"
+                href="#">Let's Chat</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Nav Ends -->
+    </header>
+
+  </div>
+
+
+  <!-- Request Demo Form Starts -->
+
+  <div class='form-overlay'></div>
+  <div class='icon' id='form-container' style="z-index: 99999999999 !important;position: fixed">
+    <span class='icon fa fa-times' id='form-close'></span>
+    <div id='form-content'>
+      <div id='form-head'>
+        <h1 class='pre'>Let's Chat</h1>
+        <p class='pre'>Good choice...</p>
+        <h1 class='post'>Thanks!</h1>
+        <p class='post'>We'll be in touch ASAP</p>
+      </div>
+      <form id="lets_chat">
+        <input id="iname" class='input name' name='user_name' placeholder='Your name please' type='text'>
+        <input id="iemail" class='input email' name='user_email' placeholder='A contact email' type='text'>
+        <input id="iphone" class='input name' name='user_phone' placeholder='Phone Number' type='text'>
+        <input id="icity" class='input name' name='user_city' placeholder='Contact City' type='text'>
+        <textarea id="imsg" class='input message' name="user_msg" placeholder='Additional Information?'></textarea>
+        <input class='input submit' onclick="submitreq()" type='submit' value='Send Message'>
+      </form>
+    </div>
+  </div>
+
+  <video src="./assests/images/Home_Video.mp4" id="headvideo" autoplay loop muted style="width: 100%;opacity:1;z-index:0">
+    hello world
+  </video>
+
+  <!-- Heading overlayed on video -->
+
+  <div class="overlay" style="color: white;">
+    <div class="type-js headline">
+      <h2 class="text-js" style="color: white;font-family: 'Share Tech Mono';font-size:0px"></h1>
+    </div>
+  </div>
+
+  <!-- Image with some content section -->
+  <div class="container-fluid" style="padding-top: 70px;padding-bottom: 70px;background:white">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img src="./assests/images/image1.png" alt="" style="width: 100%;">
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <h2 style="font-size: 40px;color:#202020;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          Welcome To <span style="color: #ef7b14">RENEXUS DIGITAL</span></h2>
+        <div class="container" style="padding-top: 10px;">
+          <p style="font-size: 30px;color:#202020">At Renexus Digital, we assist businesses in going digital. We leverage the power of digital to accelerate your growth, build a stronger brand, assist in reaching the target audience, and improve brand storytelling. At Renexus Digital, you may find solutions to any of your digital difficulties.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Number counter starts -->
+  <!-- <div class="w3-row w3-center w3-padding-16 w3-section numbers"
+    style="margin-left: 20px;margin-right: 20px;background-color:#efecec1f!important;color: rgb(233, 233, 215);">
+    <div class="w3-quarter w3-section">
+      <div class="number-item">
+        <span class="w3-xxlarge"><span class="value">100</span>+</span><br>
+        Projects Done
+      </div>
+    </div>
+    <div class="w3-quarter w3-section">
+      <div class="number-item">
+        <span class="w3-xxlarge"><span class="value">150</span>+</span><br>
+        Happy Clients
+      </div>
+    </div>
+    <div class="w3-quarter w3-section">
+      <div class="number-item">
+        <span class="w3-xxlarge"><span class="value">20</span>+</span><br>
+        Team
+      </div>
+    </div>
+    <div class="w3-quarter w3-section">
+      <div class="number-item">
+        <span class="w3-xxlarge"><span class="value">50</span>+</span><br>
+        Live Projects
+      </div>
+    </div>
+  </div> -->
+  <!-- Number counter ends -->
+
+
+
+  <div class="container" style="text-align: center;color:white; padding-top:30px">
+    <h1>METHODOLOGY</h1>
+  </div>
+  <br><br><br>
+
+  <!-- Process animation starts -->
+
+  <div class="container">
+
+    <div class="svg-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.231 185.531">
+        <defs>
+          <style>
+          </style>
+        </defs>
+
+        <g class="cls-1">
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Infinity">
+              <path id="background-path" class="process-path-background"
+                d="M213.244,29.292,340.192,156.24a89.767,89.767,0,0,0,126.948,0h0a89.765,89.765,0,0,0,0-126.948h0a89.765,89.765,0,0,0-126.948,0L213.244,156.24a89.766,89.766,0,0,1-126.947,0h0a89.767,89.767,0,0,1,0-126.948h0A89.764,89.764,0,0,1,213.244,29.292Z" />
+              <path id="background-path" class="cls-2 process-path"
+                d="M213.244,29.292,340.192,156.24a89.767,89.767,0,0,0,126.948,0h0a89.765,89.765,0,0,0,0-126.948h0a89.765,89.765,0,0,0-126.948,0L213.244,156.24a89.766,89.766,0,0,1-126.947,0h0a89.767,89.767,0,0,1,0-126.948h0A89.764,89.764,0,0,1,213.244,29.292Z" />
+              <circle id="discovery-path" class="cls-4 process-circle one" cx="60.005" cy="92.766" r="44.465" />
+              <circle id="design-path" class="cls-3 process-circle two" cx="276.718" cy="92.766" r="44.465" />
+              <circle id="development-path" class="cls-4 process-circle three" cx="493.348" cy="92.766" r="44.465" />
+              <rect class="btn cls-5" y="76.207" width="120.009" height="33.945" rx="16.972" ry="16.972" />
+              <g>
+                <text x="30.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">I</text>
+                <text x="40" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">D</text>
+                <text x="55" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">E</text>
+                <text x="70" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">A</text>
+              </g>
+              <rect class="cls-5" x="200.65" y="76.207" width="153.599" height="33.945" rx="16.972" ry="16.972" />
+              <g>
+
+                <text x="221.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">R</text>
+                <text x="235.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">E</text>
+                <text x="246.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">S</text>
+                <text x="259.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">E</text>
+                <text x="271.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">A</text>
+                <text x="284.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">R</text>
+                <text x="297.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">C</text>
+                <text x="311.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">H</text>
+
+              </g>
+              <rect class="cls-5" x="416.632" y="76.207" width="153.599" height="33.945" rx="16.972" ry="16.972" />
+              <g>
+
+                <text x="434.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">E</text>
+                <text x="446.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">X</text>
+                <text x="459.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">E</text>
+                <text x="470.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">C</text>
+                <text x="483.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">U</text>
+                <text x="497.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">T</text>
+                <text x="510.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">I</text>
+                <text x="515.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">O</text>
+                <text x="529.9" y="100" style="fill: #999999; stroke: #000000;  font-size: 20px;">N</text>
+
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- Process animation ends -->
+
+  </div>
+
+  </div>
+
+  <div w3-include-html="service.html"></div>
+
+  <!-- Including services -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <script>
+    function waitForElm(selector) {
+      return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+            resolve(document.querySelector(selector));
+            observer.disconnect();
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    }
+  </script>
+
+  <script>
+    $('#linkedinicon').empty()
+    $('#linkedinicon').append("<i class='fab fa-linkedin-in my-float'></i>");
+
+    jQuery(document).ready(function ($) {
+
+      let isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+      if (isMobile) {
+        $("#headvideo").attr("src","./assests/images/Mobile_Home_Video.mp4")
+        waitForElm('#newservices').then((elm) => {
+          $('#newservices').attr('hidden', false);
+        });
+        waitForElm('#codepenBG').then((elm) => {
+          $('#codepenBG').attr('hidden', true);
+        });
+      }
+
+      function cleartext() {
+
+        document.getElementById('microassessment').style.display = "none";
+        document.getElementById('documentreview').style.display = "none";
+        document.getElementById('macroassessment').style.display = "none";
+        document.getElementById('deliverableservices').style.display = "none";
+        document.getElementById('projectexecution').style.display = "none";
+        document.getElementById('dpooutsourcing').style.display = "none";
+      }
+
+      $(document).on('click', '.service', function (e) {
+        var that = $(this);
+        var x = that.attr('id');
+        var rel = that.data('rel');
+        var ajaxurl = that.data('url');
+        if ((document.querySelector('.row1expand') !== null) && $(this).hasClass("selectedservice"))
+
+        /* Collapse if expanded and same click */ {
+          $("#servicechoicetext").animate({ left: '390px', opacity: '0.4' }, "200", servicechoiceblank);
+          function servicechoiceblank() { document.getElementById('servicechoicetext').innerHTML = "View Services"; }
+          $(".row1").toggleClass('row1expand');
+          $(".row2").toggleClass('row2expand');
+          $(".service").toggleClass('serviceexpand');
+          $(this).toggleClass('selectedservice');
+          $('#servicesdetailschild').removeClass('visible');
+          $('#techcont').removeClass('givemargin');
+          setTimeout(function () {
+            cleartext();
+          }, 1000);
+        }
+
+        /* Expanded - change selection */
+        else if (document.querySelector('.row1expand') !== null) {
+          $(".selectedservice").removeClass('selectedservice');
+          $(this).toggleClass('selectedservice');
+
+
+
+          var servicechoicetextvar = $(this).find("p").text();
+
+          $('#servicesdetailschild').removeClass('visible');
+
+          function bodytext() {
+            cleartext()
+            if (servicechoicetextvar.trim() === "Strategy Planning") {
+              document.getElementById('microassessment').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Content Creation") {
+              document.getElementById('documentreview').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "SEO") {
+              document.getElementById('macroassessment').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Paid Advertising") {
+              document.getElementById('deliverableservices').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Reputation Management") {
+              document.getElementById('projectexecution').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Content Writing") {
+              document.getElementById('dpooutsourcing').style.display = "block";
+            }
+          }
+          setTimeout(function () {
+            bodytext();
+          }, 400);
+
+          if (document.getElementById('servicechoicetext').innerHTML !== servicechoicetextvar) {
+            /*execute sliding text*/
+            function servicechoicechange() {
+              document.getElementById('servicechoicetext').innerHTML = servicechoicetextvar;
+              $('#servicesdetailschild').addClass('visible');
+            }
+
+            $("#servicechoicetext").animate({ left: '350px', opacity: '0.9' }, "400", servicechoicechange);
+            $("#servicechoicetext").animate({ left: '70px', opacity: '0.9' }, "700");
+          }
+        }
+        /*First expansion? */
+        else {
+          $('#techcont').addClass('givemargin');
+          $(".row1").toggleClass('row1expand');
+          $(".row2").toggleClass('row2expand');
+          $(".service").toggleClass('serviceexpand');
+          $(this).toggleClass('selectedservice');
+          var servicechoicetextvar = $(this).find("p").text();
+          document.getElementById('servicechoicetext').innerHTML = servicechoicetextvar;
+          $("#servicechoicetext").animate({ left: '70px', opacity: '0.9' }, "700");
+
+          function bodytext() {
+            if (servicechoicetextvar.trim() === "Strategy Planning") {
+              document.getElementById('microassessment').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Content Creation") {
+              document.getElementById('documentreview').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "SEO") {
+              document.getElementById('macroassessment').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Paid Advertising") {
+              document.getElementById('deliverableservices').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Reputation Management") {
+              document.getElementById('projectexecution').style.display = "block";
+            }
+            if (servicechoicetextvar.trim() === "Content Writing") {
+              document.getElementById('dpooutsourcing').style.display = "block";
+            }
+          }
+
+          setTimeout(function () {
+            bodytext();
+          }, 1000);
+
+          setTimeout(function () {
+            $('#servicesdetailschild').addClass('visible');
+          }, 1100);
+        }
+      });
+    });
+
+
+
+    /*initial launch code*/
+    /*global $*/
+    $(document).ready(function () {
+      "use strict";
+      var heading = $('#our-services .desc .heading h1'),
+        txt = $('#our-services .desc .text'),
+        serviceItem = $('#our-services .services .column .service'),
+        tl = new TimelineLite();
+
+      tl
+        .from(heading, 0.3, { opacity: 0, y: -20 }, '+=0.3')
+        .from(txt, 0.3, { opacity: 0, y: -20 })
+        .staggerFrom(serviceItem, 0.2, { opacity: 0, x: -50, autoAlpha: 0 }, 0.1);
+    });
+
+  </script>
+
+
+  <!-- Contact Float button -->
+
+  <a href="#" class="float" id="menu-share">
+    <i class="fa fa-share my-float"></i>
+  </a>
+  <ul id="contactul">
+    <li><a href="https://www.linkedin.com/in/nikhilmankani/" id="linkedinicon" target="_blank">
+        <i class="fab fa-linkedin my-float"></i>
+      </a></li>
+    <li><a href="tel:+91-7276775259">
+        <i class="fa fa-phone my-float"></i>
+      </a></li>
+    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nikhilsmankani@gmail.com">
+        <i class="fa fa-envelope my-float"></i>
+      </a></li>
+  </ul>
+
+  <!-- Footer -->
+
+  <div style="margin-top: -220px;" w3-include-html="footer.html"></div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+
+  <script>
+    includeHTML()
+    /*$(window).scroll(testScroll);
+    var viewed = false;
+
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+
+      return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    //This function runs the counter only when you have visited it for the first time.
+    function testScroll() {
+      if (isScrolledIntoView($(".numbers")) && !viewed) {
+        viewed = true;
+        $('.value').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+      }
+    }*/
+
+
+
+    function autoType(elementClass, typingSpeed) {
+      var thhis = $(elementClass);
+      thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+      });
+      thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+      thhis = thhis.find(".text-js");
+      var text = thhis.text().trim().split('');
+      var amntOfChars = text.length;
+      var newString = "";
+      thhis.text("|");
+      setTimeout(function () {
+        thhis.css("opacity", 1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for (var i = 0; i < amntOfChars; i++) {
+          (function (i, char) {
+            setTimeout(function () {
+              newString += char;
+              thhis.text(newString);
+            }, i * typingSpeed);
+          })(i + 1, text[i]);
+        }
+      }, 1500);
+    }
+
+    $(document).ready(function () {
+      // Now to start autoTyping just call the autoType function with the
+      // class of outer div
+      // The second paramter is the speed between each letter is typed.
+      autoType(".type-js", 200);
+    });
+
+  </script>
+
+  <script>
+    function hideLoader() {
+      $('#loading').hide();
+    }
+
+    $(window).ready(hideLoader);
+
+
+    $(document).ready(function () {
+      $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
+      });
+    });
+
+    // Scrolling Effect
+
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        //$('nav').addClass('black');
+      }
+
+      else {
+        //$('nav').removeClass('black');
+      }
+    })
+
+
+    var formContainer = $('#form-container');
+
+    bindFormClick();
+    //Opening the form
+    function bindFormClick() {
+      $(formContainer).on('click', function (e) {
+        e.preventDefault();
+        toggleForm();
+        //Ensure container doesn't togleForm when open
+        $(this).off();
+      });
+    }
+
+    //Closing the form
+    $('#form-close, .form-overlay').click(function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      toggleForm();
+      bindFormClick();
+    });
+
+    function toggleForm() {
+      $(formContainer).toggleClass('expand');
+      $(formContainer).children().toggleClass('expand');
+      $('body').toggleClass('show-form-overlay');
+      $('.form-submitted').removeClass('form-submitted');
+    }
+
+    //Form validation
+    $('#lets_chat').submit(function () {
+      var form = $(this);
+      form.find('.form-error').removeClass('form-error');
+      var formError = false;
+
+      form.find('.input').each(function () {
+        if ($(this).val() == '') {
+          $(this).addClass('form-error');
+          $(this).select();
+          formError = true;
+          return false;
+        }
+        else if ($(this).hasClass('email') && !isValidEmail($(this).val())) {
+          $(this).addClass('form-error');
+          $(this).select();
+          formError = true;
+          return false;
+        }
+      });
+
+      if (!formError) {
+        $('body').addClass('form-submitted');
+        $('#form-head').addClass('form-submitted');
+        setTimeout(function () {
+          $(form).trigger("reset");
+        }, 1000);
+      }
+      return false;
+    });
+
+    function isValidEmail(email) {
+      var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+      return pattern.test(email);
+    };
+
+
+
+    function requestdemo() {
+      $("#form-container").trigger('click');
+    }
+
+    function submitreq() {
+      if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
+        $.ajax({
+          url: "{% url 'reqdemo' %}",
+          data: {
+            'name': $('#iname').val(),
+            'email': $('#iemail').val(),
+            'phone': $('#iphone').val(),
+            'city': $('#icity').val(),
+            'msg': $('#imsg').val()
+          },
+          encode: true
+        });
+      }
+    }
+
+  </script>

@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+    /* background: url('/media/spot-light-background-hd-wallpaper-2880x1800.jpg')!important; */
+    background-repeat: no-repeat !important;
+    background-size:contain !important;
+}
+
+a { 
+    transition: all 0.3s ease; 
+    text-decoration: none;
+}
+
+a:hover { text-decoration: none; }
+button:focus { outline: none; }
+
+p {
+    color: #666;
+    line-height: 1.9;
+}
+
+.tm-title-gray { color: #666; }
+
+.tm-hr {
+    width: 240px;
+    border-top: 3px solid #ef7b14;
+    margin: 0;
+}
+
+.tm-hr-s { width: 140px; }
+.tm-box-borde#ef7b14 { border: 1px solid #9C9D9E; }
+.container-fluid { max-width: 1480px; }
+
+
+
+
+
+.tm-intro { max-width: 580px; }
+h4 { font-size: 1.5rem; }
+.tm-text-primary { color: #0099FF; }
+.tm-text-primary-link { color: #0099FF; }
+.tm-text-primary-link:hover { color: rgb(15, 133, 211); }
+
+.tm-strategy-box { 
+    display: flex; 
+    align-items: flex-start;
+}
+
+.tm-services-box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tm-strategy-img { margin-right: 30px; }
+.tm-services-img { margin-right: 40px; }
+.tm-strategy-text { max-width: 480px; }
+.mb-6 { margin-bottom: 120px; }
+.mb-7 { margin-bottom: 140px; }
+.mb-8 { margin-bottom: 80px; }
+.mb-60 { margin-bottom: 60px; }
+.mb-10 { margin-bottom: 100px; }
+.mb-25 { margin-bottom: 250px; }
+.mt-6 { margin-top: 90px; }
+.mt-7 { margin-top: 140px; }
+.tm-px-3 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tm-text-gray { color: #666; }
+.tm-bg-gray { background-color: #F2F2F2; }
+.tm-bg-gray-dark { background-color: #EDEEEF; }
+.tm-bg-white { background-color: rgba(255,255,255,0.6); }
+.tm-bg-black-transparent { background-color: #202020; }
+.tm-box { padding: 50px; }
+.tm-box-2 { padding: 50px; max-width: 500px; }
+
+
+/* Contact */
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:520px;
+    width:100%;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:520px;
+    width:100%;
+}
+
+.tm-contact-form-box { max-width: 485px; }
+.tm-address-box { max-width: 860px; }
+.form-group { margin-bottom: 40px; }
+
+.form-control {
+  font-size: 1em;
+  border-radius: 0;
+  padding: 14px 20px;
+  height: auto;
+}
+
+
+
+

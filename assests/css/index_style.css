@@ -1,0 +1,373 @@
+
+@media(max-width:600px){
+  .overlay h2 {
+    font-size: 45px !important;
+  }
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 20px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #202020;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 15px;
+  ;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #FFFFFF;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+#navbar {
+  z-index: 20px;
+}
+
+@media(max-width: 786px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+  nav ul {
+    max-height: 0px;
+    background: #FFFFFF;
+  }
+  nav.black ul {
+    background: #202020;
+  }
+  .showing {
+    max-height: 34em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #navbar {
+    z-index: 20;
+  }
+}
+
+/* SVG ANIMATION CSS */
+
+.cls-1 {
+  isolation: isolate;
+}
+
+.cls-2, .cls-3, .cls-4 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
+.cls-2 {
+  stroke: #d3ddde;
+  stroke-width: 6px;
+}
+
+.cls-3 {
+  stroke: #6f9078;
+}
+
+.cls-3, .cls-4 {
+  stroke-width: 3px;
+  mix-blend-mode: multiply;
+}
+
+.cls-4 {
+  stroke: #e48357;
+}
+
+.cls-5 {
+  fill: #f4f8f9;
+}
+
+.cls-6 {
+  fill: #4b514e;
+}
+
+@media(max-width: 769px) {
+  .svg-container {
+    width: 372px;
+  }
+}
+
+@media(min-width: 600px) {
+  .svg-container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+  }
+}
+
+.process-path {
+  stroke-dashoffset: 0;
+  animation-name: process;
+  animation-iteration-count: infinite;
+  stroke-dasharray: 300 100;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+.process-path-background {
+  stroke: #daa112;
+  stroke-width: 4;
+  fill: none;
+}
+
+.process-circle {
+  stroke-dashoffset: 0;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.process-circle:hover {
+  animation-duration: 2s;
+}
+
+.process-circle.one {
+  stroke-dasharray: 40 4;
+  animation-duration: 10s;
+}
+
+.process-circle.two {
+  stroke-dasharray: 40 4;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+.process-circle.three {
+  stroke-dasharray: 40 4;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+@keyframes process {
+  from {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1000 200;
+  }
+  to {
+    stroke-dashoffset: 200;
+    stroke-dasharray: 300 100;
+  }
+}
+
+@keyframes spin {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+@keyframes spin-fast {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+/* Heading text and its video */
+
+.overlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay h2 {
+  font-size: 80px;
+  
+  color: white;
+  font-weight: 600;
+  mix-blend-mode: overlay;
+  text-align: left;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+
+@media(max-width:600px){
+  footer{
+    margin-top: 71px !important;
+  }
+   
+}
+
+@media(max-width:600px){
+.overlay h1{
+  font-weight: 600;
+  font-size: 3.7em;
+}
+}
+@media(min-width:600px){
+  .overlay h1{
+    font-weight: 800;
+    margin: 0.4em 0;
+    font-size: 5.5em;
+  }
+  }
+
+
+/* This is typing css */
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: none;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  /* Change colour of Cursor Here */
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+.text-js {
+  opacity: 0;
+}
+
+.cursor {
+  display: none !important;
+  position: absolute !important;
+  height: 100% !important;
+  top: 0 !important;
+  right: -5px !important;
+  width: 2px !important;
+  /* Change colour of Cursor Here */
+  background-color: white !important;
+  z-index: 1 !important;
+  -webkit-animation: flash 0.5s none infinite alternate;
+          animation: flash 0.5s none infinite alternate;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  boz-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00C4FF, #9D1BB2);
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+} */
+
+.headline {
+  margin: 20px !important;
+  color: white !important;
+  font-size: 32px !important;
+  text-align: center !important;
+}
+.headline h1 {
+  letter-spacing: 1.6px !important;
+  font-weight: 300 !important;
+}
+
+
+body{
+  background-color: #202020 !important;
+}

@@ -1,0 +1,252 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #222;
+        font-family: Georgia, serif;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    a {
+        color: #ffffcc;
+        text-decoration: none;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    a:hover,
+    a.selected {
+        color: #ffcc00;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+        color: #ccc;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .sociales {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #timeline1 {
+        width: 380px;
+        height: 600px;
+        overflow: hidden;
+        margin: 40px auto;
+        position: relative;
+        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+    }
+
+    .showing {
+        max-height: 48em !important;
+    }
+
+    #dates {
+        width: 71px;
+        height: 600px;
+        overflow: hidden;
+        float: left;
+    }
+
+    #dates li {
+        list-style: none;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 24px;
+        padding-left: 10px;
+        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+    }
+
+    #dates a {
+        line-height: 38px;
+        padding-bottom: 10px;
+    }
+
+    #dates .selected {
+        font-size: 38px;
+    }
+
+    #issues {
+        width: 276px;
+        height: 600px;
+        overflow: hidden;
+        float: left;
+    }
+
+    #issues li {
+        max-width: 300px;
+        height: 600px;
+        list-style: none;
+        text-align: center;
+
+    }
+
+    #issues li.selected img {
+        -webkit-transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+
+    #issues li img {
+
+        width: 200px;
+        margin: 10px 30px 10px 50px;
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+        /* IE 8 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+        /* IE 6 & 7 */
+        zoom: 1;
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+        -ms-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+        -webkit-transform: scale(0.7, 0.7);
+        -moz-transform: scale(0.7, 0.7);
+        -o-transform: scale(0.7, 0.7);
+        -ms-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
+    }
+
+    #issues li h1 {
+        color: #ffcc00;
+        font-size: 48px;
+        text-align: center;
+        text-shadow: #202020 1px 1px 2px;
+    }
+
+    #issues li p {
+        font-size: 14px;
+        margin: 10px 20px;
+        font-weight: normal;
+        line-height: 22px;
+    }
+
+    #grad_top,
+    #grad_bottom {
+        width: 500px;
+        height: 80px;
+        position: absolute;
+    }
+
+    #grad_top {
+        top: 0;
+        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
+    }
+
+    #grad_bottom {
+        bottom: 0;
+        background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
+    }
+
+    #next,
+    #prev {
+        position: absolute;
+        left: 45%;
+        font-size: 70px;
+        width: 38px;
+        height: 22px;
+        background-position: 0 -44px;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+    #next:hover,
+    #prev:hover {
+        background-position: 0 0;
+    }
+
+    #next {
+        bottom: 0;
+        background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+    }
+
+    #prev {
+        top: 0;
+        background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+    }
+
+    #next.disabled,
+    #prev.disabled {
+        opacity: 0.2;
+    }
+</style>
+
+
+<body>
+    <div id="timeline1" style="margin-top: 130px;" hidden>
+        <ul id="dates">
+            <li><a href="#1" class="selected">Support</a></li>
+            <li><a href="#2">Connect</a></li>
+            <li><a href="#3">Affordable</a></li>
+            <li><a href="#4">Traffic</a></li>
+            <li><a href="#5">SEO</a></li>
+            <li><a href="#6">Leads</a></li>
+            <li><a href="#7">Campaigns</a></li>
+            <li><a href="#8">Last</a></li>
+        </ul>
+        <ul id="issues">
+            <li id="1" class="selected" style="margin-top: 86px !important;">
+                <img src="./assests/images/About-criss_images/1st-point.jpg" />
+                <p>We support you in establishing and levelling up your brand recognition.</p>
+            </li>
+            <li id="2">
+                <img src="./assests/images/About-criss_images/2nd-point.jpg" />
+                <p>We help you connect with customers</p>
+            </li>
+            <li id="3">
+                <img src="./assests/images/About-criss_images/3rd-point.jpg" />
+                <p>We offer top notch services at affordable prices.</p>
+            </li>
+            <li id="4">
+                <img src="./assests/images/About-criss_images/4th-point.jpg" />
+                <p>We support you in increasing website traffic.</p>
+            </li>
+            <li id="5">
+                <img src="./assests/images/About-criss_images/5th-SEO-point.jpg" />
+                <p>We offer SEO help</p>
+            </li>
+            <li id="6">
+                <img src="./assests/images/About-criss_images/6th-point.jpg" />
+                <p>We assist you with lead generation.</p>
+            </li>
+            <li id="7">
+                <img src="./assests/images/About-criss_images/7th-point.jpg" />
+                <p>We help you with targeted campaigns.</p>
+            </li>
+            <li id="8">
+                <img src="./assests/images/About-criss_images/8th-point.jpg" />
+                <p>To be written</p>
+            </li>
+        </ul>
+        <div id="grad_top"></div>
+        <div id="grad_bottom"></div>
+        <a href="#" id="next">+</a>
+        <a href="#" id="prev">-</a>
+    </div>
+</body>
