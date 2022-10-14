@@ -621,6 +621,10 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 600px) {
+  #logo_img {
+    width: 20% !important;
+  }
+
   #form-container.expand {
     height: 100%;
     width: 100%;
@@ -697,6 +701,11 @@ input:-webkit-autofill {
 #timeline p{
   line-height: 1.1;
 }
+
+#logo_img {
+  width: 10%;
+}
+
 
 /* .preloader {
   width: 140px;
