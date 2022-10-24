@@ -117,11 +117,11 @@
           <i style="color: #202020" class="fa fa-bars fa-2x"></i>
         </div>
         <div class="logo">
-          <a href="https://niksm7.github.io/renexus-digital/" style="font-size:20px;font-weight:600;color:#202020"><img src="./assests/images/Main_Logo.png" id="logo_img" alt="RD"></a>
+          <a href="http://renexusdigital.com/" style="font-size:20px;font-weight:600;color:#202020"><img src="./assests/images/Main_Logo.png" id="logo_img" alt="RD"></a>
         </div>
         <div class="menu">
           <ul>
-            <li><a style="color:#202020; " href="https://niksm7.github.io/renexus-digital/">Home</a></li>
+            <li><a style="color:#202020; " href="http://renexusdigital.com/">Home</a></li>
             <li><a style="color:#202020;" href="about">About Us</a></li>
             <li><a style="color:#202020;" href="contact">Contact</a></li>
             <li><button onclick="requestdemo()" class="btn btn-outline-success" style="color: #202020;border-radius: 10%"
@@ -422,17 +422,17 @@
   }
 
   function submitreq() {
+    console.log("here")
     if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
       $.ajax({
-        url: "{% url 'reqdemo' %}",
+        url: "https://maker.ifttt.com/trigger/ContactUs/with/key/f1Vr0-hyS71ve1qpX_kePZnEzt-3WtvPYAuaa0Fm86n",
+        type: "POST",
         data: {
-          'name': $('#iname').val(),
-          'email': $('#iemail').val(),
-          'phone': $('#iphone').val(),
-          'city': $('#icity').val(),
-          'msg': $('#imsg').val()
+          "value1": `Name: ${$('#iname').val()} (Email: ${$('#iemail').val()})`,
+          "value2": `Phone: ${$('#iphone').val()} (City: ${$('#icity').val()})`,
+          "value3": `Message Content: ${$('#imsg').val()}`,
         },
-        encode: true
+        complete: function(){alert("Success")}
       });
     }
   }

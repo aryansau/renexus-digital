@@ -494,21 +494,21 @@ function requestdemo(){
   $("#form-container").trigger('click');
 }
 
-function submitreq(){
-  if($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != ''){
+function submitreq() {
+  console.log("here")
+  if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
     $.ajax({
-          url: "{% url 'reqdemo' %}",
-          data: {
-            'name': $('#iname').val(),
-            'email': $('#iemail').val(),
-            'phone': $('#iphone').val(),
-            'city': $('#icity').val(),
-            'msg': $('#imsg').val()
-          },
-          encode: true
-        });
-    }
+      url: "https://maker.ifttt.com/trigger/ContactUs/with/key/f1Vr0-hyS71ve1qpX_kePZnEzt-3WtvPYAuaa0Fm86n",
+      type: "POST",
+      data: {
+        "value1": `Name: ${$('#iname').val()} (Email: ${$('#iemail').val()})`,
+        "value2": `Phone: ${$('#iphone').val()} (City: ${$('#icity').val()})`,
+        "value3": `Message Content: ${$('#imsg').val()}`,
+      },
+      complete: function(){alert("Success")}
+    });
   }
+}
 
 </script>
 </html>

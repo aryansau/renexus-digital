@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="facebook-domain-verification" content="vixqusq08a8nx10tcw1u8rtm37j22k" />
   <title>Home</title>
 
   <link rel="icon" type="image/x-icon" href="./assests/images/favicon.ico">
@@ -34,6 +35,24 @@
   <link rel="stylesheet" href="./assests/css/service.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '494979912539517');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=494979912539517&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body style="background:white">
@@ -648,17 +667,17 @@
     }
 
     function submitreq() {
+      console.log("here")
       if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
         $.ajax({
-          url: "{% url 'reqdemo' %}",
+          url: "https://maker.ifttt.com/trigger/ContactUs/with/key/f1Vr0-hyS71ve1qpX_kePZnEzt-3WtvPYAuaa0Fm86n",
+          type: "POST",
           data: {
-            'name': $('#iname').val(),
-            'email': $('#iemail').val(),
-            'phone': $('#iphone').val(),
-            'city': $('#icity').val(),
-            'msg': $('#imsg').val()
+            "value1": `Name: ${$('#iname').val()} (Email: ${$('#iemail').val()})`,
+            "value2": `Phone: ${$('#iphone').val()} (City: ${$('#icity').val()})`,
+            "value3": `Message Content: ${$('#imsg').val()}`,
           },
-          encode: true
+          complete: function(){alert("Success")}
         });
       }
     }
