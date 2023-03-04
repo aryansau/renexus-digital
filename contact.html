@@ -235,7 +235,7 @@
           <h3 class="tm-title-black mb-4 text-center">Contact Information</h3>
           <hr class="mb-8 tm-hr tm-hr-s mx-auto">
           <!-- Contact form starts -->
-          <form id="contact-form" class="tm-contact-form" onsubmit="submitreq('Form2')">
+          <form id="contact-form" class="tm-contact-form">
             <div class="form-group">
               <input type="text" id="iname2" name="name" class="form-control rounded-0" placeholder="Name" required />
             </div>
@@ -254,7 +254,7 @@
             </div>
 
             <div class="form-group mb-0">
-              <button type="submit" style="background-color: #ef7b14;" class="btn btn-danger rounded-0 d-block mx-auto">Submit</button>
+              <button onclick="submitreq('Form2')" style="background-color: #ef7b14;" class="btn btn-danger rounded-0 d-block mx-auto">Submit</button>
             </div>
           </form>
           <!-- Contact form ends -->
@@ -464,7 +464,7 @@
           "value2": `Phone: ${given_phone} (City: ${given_city})`,
           "value3": `Message Content: ${given_msg}`,
         },
-        complete: function(){alert("Success") location.reload}
+        complete: function(){alert("Success");location.reload()}
       });
     }
   }
