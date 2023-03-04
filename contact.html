@@ -165,11 +165,11 @@
       </div>
       <form id="lets_chat">
         <input id="iname" class='input name' name='user_name' placeholder='Your name please' type='text'>
-        <input id="iemail" class='input email' name='user_email' placeholder='A contact email' type='text'>
-        <input id="iphone" class='input name' name='user_phone' placeholder='Phone Number' type='text'>
-        <input id="icity" class='input name' name='user_city' placeholder='Contact City' type='text'>
+        <input id="iemail" class='input email' name='user_email' placeholder='contact email' type='text'>
+        <input id="iphone" class='input phone' name='user_phone' placeholder='Phone Number (Optional)' type='text'>
+        <input id="icity" class='input city' name='user_city' placeholder='Contact City (Optional)' type='text'>
         <textarea id="imsg" class='input message' name="user_msg" placeholder='Additional Information?'></textarea>
-        <input class='input submit' onclick="submitreq()" type='submit' value='Send Message'>
+        <input class='input submit' onclick="submitreq('Form1')" type='submit' value='Send Message'>
       </form>
     </div>
   </div>
@@ -235,19 +235,22 @@
           <h3 class="tm-title-black mb-4 text-center">Contact Information</h3>
           <hr class="mb-8 tm-hr tm-hr-s mx-auto">
           <!-- Contact form starts -->
-          <form id="contact-form" action="{% url 'contact' %}" method="POST" class="tm-contact-form">
+          <form id="contact-form" class="tm-contact-form" onsubmit="submitreq('Form2')">
             <div class="form-group">
-              <input type="text" name="name" class="form-control rounded-0" placeholder="Name" requi#ef7b14 />
+              <input type="text" id="iname2" name="name" class="form-control rounded-0" placeholder="Name" required />
             </div>
             <div class="form-group">
-              <input type="email" name="email" class="form-control rounded-0" placeholder="Email" requi#ef7b14 />
+              <input type="email" id="iemail2" name="email" class="form-control rounded-0" placeholder="Email" required />
             </div>
             <div class="form-group">
-              <input type="text" name="subject" class="form-control rounded-0" placeholder="Subject" requi#ef7b14 />
+              <input type="text" id="iphone2" name="phone" class="form-control rounded-0" placeholder="Phone Number (Optional)"/>
             </div>
             <div class="form-group">
-              <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message"
-                requi#ef7b14></textarea>
+              <input type="text" id="icity2" name="city" class="form-control rounded-0" placeholder="City (Optional)"/>
+            </div>
+            <div class="form-group">
+              <textarea rows="8" id="imsg2" name="message" class="form-control rounded-0" placeholder="Message"
+              required></textarea>
             </div>
 
             <div class="form-group mb-0">
@@ -436,18 +439,32 @@
     $("#form-container").trigger('click');
   }
 
-  function submitreq() {
-    console.log("here")
-    if ($('#iname').val() != '' && $('#iemail').val() != '' && $('#iphone').val() != '' && $('#icity').val() != '' && $('#imsg').val() != '') {
+  function submitreq(form_name) {
+    console.log(form_name)
+    if(form_name == "Form1"){
+      given_name = $('#iname').val()
+      given_email = $('#iemail').val()
+      given_phone = $('#iphone').val()
+      given_city = $('#icity').val()
+      given_msg = $('#imsg').val()
+    }
+    else{
+      given_name = $('#iname2').val()
+      given_email = $('#iemail2').val()
+      given_phone = $('#iphone2').val()
+      given_city = $('#icity2').val()
+      given_msg = $('#imsg2').val()
+    }
+    if (given_name != '' && given_email != '' && given_msg != '') {
       $.ajax({
         url: "https://maker.ifttt.com/trigger/ContactUs/with/key/f1Vr0-hyS71ve1qpX_kePZnEzt-3WtvPYAuaa0Fm86n",
         type: "POST",
         data: {
-          "value1": `Name: ${$('#iname').val()} (Email: ${$('#iemail').val()})`,
-          "value2": `Phone: ${$('#iphone').val()} (City: ${$('#icity').val()})`,
-          "value3": `Message Content: ${$('#imsg').val()}`,
+          "value1": `Name: ${given_name} (Email: ${given_email})`,
+          "value2": `Phone: ${given_phone} (City: ${given_city})`,
+          "value3": `Message Content: ${given_msg}`,
         },
-        complete: function(){alert("Success")}
+        complete: function(){alert("Success") location.reload}
       });
     }
   }
